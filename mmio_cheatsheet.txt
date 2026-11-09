@@ -1,0 +1,19 @@
+DIRECT PORT MANIPULATION:
+
+Port B D8 - D13
+Port C A0 - A5
+Port D D0 - D7
+
+DDRx (Data Direction Register):
+bit = 1: output,
+bit = 0: input.
+
+PORTx (Port output register):
+IF DDRx = 1 (output): -> 1 = HIGH (5 V), 0 = LOW (0 V),
+IF DDRx = 0 (input):  -> 1 = PULL-UP, 0 = floating.
+
+PINx (Port Input pins register):
+1 = HIGH, 0 = LOW (digitalRead()).
+
+References:
+https://docs.arduino.cc/retired/hacking/software/PortManipulation/
